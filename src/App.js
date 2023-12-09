@@ -1,22 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Rubik from './rubiks.tsx';
 
 function App() {
+  const sequence = ["L", "L", "D⁻¹", "U⁻¹", "L", "D", "D", "L", "U⁻¹", "R", "D", "F", "F", "D"];
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Rubik seq={sequence} />
       </header>
     </div>
   );
